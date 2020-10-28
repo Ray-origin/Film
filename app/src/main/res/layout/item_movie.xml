@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:id="@+id/relative_layout">
+
+    <LinearLayout
+        android:id="@+id/image"
+        android:background="@drawable/ic_baseline_movie_filter_24"
+        android:layout_width="149dp"
+        android:layout_height="145dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:padding="3dip">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image"
+        android:layout_toRightOf="@+id/image"
+        android:text="Movie Title"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="20dip"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textColor="#10bcc9"
+        android:textSize="20dp"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/image"
+        android:text="25.000 vnd" />
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/image"
+        android:text="phim chua noi dung gi do...."
+        android:minLines="4"/>
+
+
+
+</RelativeLayout>
